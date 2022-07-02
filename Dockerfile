@@ -1,4 +1,6 @@
 FROM alpine
+# arm runner
 FROM klud/gitlab-runner
-FROM node:14.19.0-alpine
+# arm node
+FROM arm32v7/node:14.19.3-alpine
 RUN npm install -g cnpm --registry=https://registry.npmmirror.com
